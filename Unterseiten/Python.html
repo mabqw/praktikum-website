@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Grundlagen Python</title>
+    <link rel="stylesheet" href="/style/styleUnter.css">
+    <script src="script.js" defer></script>
+    <style>
+        .block {
+            border: 3px solid rgba(146, 153, 255, 0.842);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 30px auto;
+            max-width: 800px;
+            box-shadow: 0 4px 10px rgba(146, 153, 255, 0.4);
+            text-align: center;
+        }
+        .block img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        pre {
+            text-align: left;
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 10px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <img src="/pictures/menu-icon.png" alt="Menü" class="menu-icon">
+                </button>
+                <div class="dropdown-content">
+                    <a href="/Unterseiten/GrundlagenDerIT.html">Grundlagen der IT</a>
+                    <a href="/Unterseiten/Tech.html">Präsentationstechniken</a>
+                    <a href="/Unterseiten/KIAnwendungUndEthik.html">KI Anwendung & Ethik</a>
+                    <a href="/Unterseiten/ITSicherheit.html">IT Sicherheit</a>
+                    <a href="/Unterseiten/TDIPBProductionStability.html">TDI PB Production Stability</a>
+                    <a href="/Unterseiten/Agilitaet.html">Agilität</a>
+                    <a href="/Unterseiten/Java.html">Java</a>
+                    <a href="/Unterseiten/DB.html">Deutsche Bank</a>
+                    <a href="/Homepage.html">Home</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="nav-center">
+            <p class="nav-title">Python</p>
+        </div>
+        <div class="nav-right">
+            <a id="Homepage" href="/login.html">
+                <img src="/pictures/icon-key.png" alt="Homepage" class="home-icon">
+            </a>
+        </div>
+    </nav>
+
+    <div class="navbar-placeholder"></div>
+
+    <div class="main">
+        <div class="block" id="syntax">
+            <h2>Was ist Python?</h2>
+            <p>Python ist eine einfach zu lernende, vielseitige Programmiersprache. Sie wird in Webentwicklung, Datenanalyse, KI und Automatisierung eingesetzt.</p>
+            <img src="/pictures/python-logo.png" alt="Python Logo" style="width: 7%; height: 7%;">
+        </div>
+
+        <div class="block" id="beispiele">
+            <h2>Einfaches Beispiel: FizzBuzz</h2>
+            <p>Das folgende Programm prüft Zahlen von 0 bis 100 auf Teilbarkeit durch 3 und 5:</p>
+            <pre><code>def nummer():
+    x = 0
+    while x < 101:
+        if x % 3 == 0 and x % 5 == 0:
+            print(x, ": fizzbuzz")
+        elif x % 3 == 0:
+            print(x, ": fizz")
+        elif x % 5 == 0:
+            print(x, ": buzz")
+        else:
+            print(x, ": nix")
+        x += 1
+</code></pre>
+        </div>
+
+        <div class="block" id="funktionen">
+            <h2>Eigene Funktionen erstellen</h2>
+            <p>Funktionen erlauben es, wiederverwendbaren Code zu schreiben:</p>
+            <pre><code>def AKreis(a):
+    b = a**2 * 3.14
+    print("Die Lösung ist:", b)
+    return b
+</code></pre>
+        </div>
+
+        <div class="block" id="bibliotheken">
+            <h2>Arbeiten mit Bibliotheken: Matplotlib & NumPy</h2>
+            <p>Das folgende Beispiel zeigt, wie man mit Zufallszahlen arbeitet und ein Diagramm erzeugt:</p>
+            <pre><code>import random
+import matplotlib.pyplot as plt
+import numpy as np
+
+def number(n, m):
+    a = b = c = d = e = 0
+    o = 0
+
+    while o < n:
+        x = random.randrange(1, m)
+        if x == 1:
+            a += 1
+        elif x == 2:
+            b += 1
+        elif x == 3:
+            c += 1
+        elif x == 4:
+            d += 1
+        elif x == 5:
+            e += 1
+        o += 1
+
+    print("a:", a, "b:", b, "c:", c, "d:", d, "e:", e)
+
+    xpoints = np.array([0, "a", "b", "c", "d", "e"])
+    ypoints = np.array([0, a, b, c, d, e])
+    plt.plot(xpoints, ypoints)
+    plt.show()
+</code></pre>
+        </div>
+    </div>
+
+    <div class="footer-placeholder"></div>
+
+    <footer class="footer">
+        <div class="footer-left">
+            <a href="/Unterseiten/KIAnwendungUndEthik.html">
+                <img src="/pictures/zuruck-button.png" alt="Zurück" class="home-icon">
+            </a>
+        </div>
+
+        <div class="footer-center">
+            <a href="/Homepage.html" class="footer-home-button">Home</a>
+        </div>
+
+        <div class="footer-right">
+            <a href="/Unterseiten/ITSicherheit.html">
+                <img src="/pictures/zuruck-button2.png" alt="Weiter" class="home-icon2">
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        const footer = document.querySelector(".footer");
+        document.addEventListener("mousemove", function (e) {
+            const distanceFromBottom = window.innerHeight - e.clientY;
+            if (distanceFromBottom < 100) {
+                footer.classList.add("show");
+            } else {
+                footer.classList.remove("show");
+            }
+        });
+    </script>
+</body>
+
+</html>

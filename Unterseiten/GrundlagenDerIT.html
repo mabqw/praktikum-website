@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grundlagen der IT</title>
+  <link rel="stylesheet" href="/style\styleGrundlagen.css">
+</head>
+
+<body>
+
+
+  <nav class="navbar">
+    <div class="nav-left">
+      <div class="dropdown">
+        <button class="dropbtn">
+          <img src="/pictures/menu-icon.png" alt="Menü" class="menu-icon">
+        </button>
+        <div class="dropdown-content">
+          <a href="/Unterseiten/Tech.html">Präsentationstechniken</a>
+          <a href="/Unterseiten/KIAnwendungUndEthik.html">KI Anwendung & Ethik</a>
+          <a href="/Unterseiten/Python.html">Python</a>
+          <a href="/Unterseiten/ITSicherheit.html">IT Sicherheit</a>
+          <a href="/Unterseiten/TDIPBProductionStability.html">TDI PB Production Stability</a>
+          <a href="/Unterseiten/Agilitaet.html">Agilität</a>
+          <a href="/Unterseiten/Java.html">Java</a>
+          <a href="/Unterseiten/DB.html">Deutsche Bank</a>
+          <a href="/Homepage.html">Home</a>
+
+        </div>
+      </div>
+    </div>
+    <div class="nav-center">
+      <p class="nav-title">Grundlagen der IT; Python(PP)</p>
+    </div>
+    <div class="nav-right">
+      <a href="/login.html">
+        <img src="/pictures/icon-key.png" alt="Home" class="home-icon" />
+      </a>
+    </div>
+  </nav>
+  <div class="navbar-placeholder"></div>
+
+  <main class="content">
+    <div class="image-container">
+      <img src="/pictures/Folie1.png" alt="Folie 1">
+    </div>
+    <div class="image-container">
+      <img src="/pictures/Folie2.png" alt="Folie 2">
+    </div>
+    <div class="image-container">
+      <img src="/pictures/Folie3.png" alt="Folie 3">
+    </div>
+    <div class="image-container">
+      <img src="/pictures/Folie4.png" alt="Folie 4">
+    </div>
+    <div class="image-container">
+      <img src="/pictures/Folie5.png" alt="Folie 5">
+    </div>
+  </main>
+
+
+  <div class="footer-placeholder"></div>
+  <div class="footer-placeholder"></div>
+
+  <footer class="footer">
+
+    <div class="footer-center">
+      <a href="/Homepage.html" class="footer-home-button">Home</a>
+    </div>
+
+    <div class="footer-right">
+      <a href="/Unterseiten/Tech.html">
+        <img src="/pictures/zuruck-button2.png" alt="Weiter" class="home-icon2">
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    const footer = document.querySelector(".footer");
+
+    document.addEventListener("mousemove", function (e) {
+      const distanceFromBottom = window.innerHeight - e.clientY;
+
+      if (distanceFromBottom < 100) {
+        footer.classList.add("show");
+      } else {
+        footer.classList.remove("show");
+      }
+    });
+  </script>
+</body>
+
+</html>

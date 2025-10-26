@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deutsche Bank – IT Praktikum</title>
+  <link rel="stylesheet" href="/style\styleDB.css" />
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="nav-left">
+      <div class="dropdown">
+        <button class="dropbtn">
+          <img src="/pictures/menu-icon.png" alt="Menü" class="menu-icon">
+        </button>
+        <div class="dropdown-content">
+          <a href="/Unterseiten/GrundlagenDerIT.html">Grundlagen der IT</a>
+          <a href="/Unterseiten/Tech.html">Präsentationstechniken</a>
+          <a href="/Unterseiten/KIAnwendungUndEthik.html">KI Anwendung & Ethik</a>
+          <a href="/Unterseiten/Python.html">Python</a>
+          <a href="/Unterseiten/ITSicherheit.html">IT Sicherheit</a>
+          <a href="/Unterseiten/TDIPBProductionStability.html">TDI PB Production Stability</a>
+          <a href="/Unterseiten/Agilitaet.html">Agilität</a>
+          <a href="/Unterseiten/Java.html">Java</a>
+          <a href="/Homepage.html">Home</a>
+
+        </div>
+      </div>
+    </div>
+    <div class="nav-center">
+      <p class="nav-title">Praktikum bei der Deutschen Bank</p>
+    </div>
+    <div class="nav-right">
+      <a href="/login.html">
+        <img src="/pictures/icon-key.png" alt="Home" class="home-icon" />
+      </a>
+    </div>
+  </nav>
+
+  <div class="navbar-placeholder"></div>
+
+<div class="main"> 
+  <h1>Deutsche Bank – IT Praktikum</h1>
+
+  <div class="block">
+    <h2>Warum ein Praktikum bei der Deutschen Bank im IT-Bereich?</h2>
+    <ul>
+      <li><strong>Innovation:</strong> Neueste Technologien wie Cloud Computing, Künstliche Intelligenz und Big Data</li>
+      <li><strong>Globales Umfeld:</strong> Internationale Projektarbeit in interdisziplinären Teams</li>
+      <li><strong>Agiles Arbeiten:</strong> Einsatz moderner Methoden wie Scrum und DevOps</li>
+      <li><strong>Moderne IT-Architektur:</strong> Nutzung von Microservices, APIs und Containern (Docker/Kubernetes)</li>
+    </ul>
+  </div>
+
+  <div class="block">
+    <h2>Technologien & Tools</h2>
+    <ul>
+      <li><strong>Programmiersprachen:</strong> Java, Python, JavaScript</li>
+      <li><strong>Cloud-Plattformen:</strong> Microsoft Azure, AWS</li>
+      <li><strong>Datenbanken:</strong> SQL, NoSQL (z. B. MongoDB)</li>
+      <li><strong>Tools:</strong> Git, Jenkins, Jira, Confluence</li>
+    </ul>
+  </div>
+
+  <div class="block">
+    <h2>Soft Skills</h2>
+    <ul>
+      <li>Teamfähigkeit und klare Kommunikation</li>
+      <li>Analytisches und strukturiertes Denken</li>
+      <li>Selbstständiges und eigenverantwortliches Arbeiten</li>
+    </ul>
+  </div>
+</div>
+
+
+  <div class="footer-placeholder"></div>
+
+  <footer class="footer">
+
+    <div class="footer-center">
+      <a href="/Homepage.html" class="footer-home-button">Home</a>
+    </div>
+
+  </footer>
+
+  <script>
+    const footer = document.querySelector(".footer");
+
+    document.addEventListener("mousemove", function (e) {
+      const distanceFromBottom = window.innerHeight - e.clientY;
+
+      if (distanceFromBottom < 100) {
+        footer.classList.add("show");
+      } else {
+        footer.classList.remove("show");
+      }
+    });
+  </script>
+
+</body>
+
+</html>

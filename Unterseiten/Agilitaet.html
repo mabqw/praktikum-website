@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head id="front">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Agilität</title>
+    <link rel="stylesheet" href="/style\styleUnter.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <nav class="navbar">
+
+        <div class="nav-left">
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <img src="/pictures/menu-icon.png" alt="Menü" class="menu-icon">
+                </button>
+                <div class="dropdown-content">
+                    <a href="/Unterseiten/GrundlagenDerIT.html">Grundlagen der IT</a>
+                    <a href="/Unterseiten/Tech.html">Präsentationstechniken</a>
+                    <a href="/Unterseiten/KIAnwendungUndEthik.html">KI Anwendung & Ethik</a>
+                    <a href="/Unterseiten/Python.html">Python</a>
+                    <a href="/Unterseiten/ITSicherheit.html">IT Sicherheit</a>
+                    <a href="/Unterseiten/TDIPBProductionStability.html">TDI PB Production Stability</a>
+                    <a href="/Unterseiten/Java.html">Java</a>
+                    <a href="/Unterseiten/DB.html">Deutsche Bank</a>
+                    <a href="/Homepage.html">Home</a>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="nav-center">
+            <p class="nav-title">Agilität in der Arbeitswelt; Moderne Organisation</p>
+        </div>
+        <div class="nav-right">
+            <a id="Homepage" href="/login.html">
+                <img src="/pictures/icon-key.png" alt="Homepage" class="home-icon">
+            </a>
+        </div>
+    </nav>
+
+    <div class="navbar-placeholder"></div>
+    <div class="navbar-placeholder"></div>
+
+    <div class="main">
+        <main>
+            <main>
+                <section class="block">
+                    <h2>Was ist Agilität in der Arbeitswelt?</h2>
+                    <ul>
+                        <li>Fähigkeit, schnell und flexibel auf Veränderungen und Anforderungen zu reagieren.</li>
+                        <li>Wichtig in dynamischen Umfeldern wie IT, Produktentwicklung oder Start-ups.</li>
+                        <li>Setzt auf Zusammenarbeit, Selbstorganisation und kontinuierliche Verbesserung.</li>
+                    </ul>
+    </section>
+
+    <section class="block">
+        <h2>Scrum: Ein agiles Rahmenwerk</h2>
+        <ul>
+            <li><strong>Scrum Master:</strong> Achtet auf Prozessregeln & fördert das Team.</li>
+            <li><strong>Product Owner:</strong> Stellt sicher, dass das Team an den wichtigsten
+                Anforderungen arbeitet.</li>
+            <li><strong>Entwicklungsteam:</strong> Selbstorganisiert, interdisziplinär, liefert am Ende
+                jedes Sprints ein nutzbares Produkt.</li>
+            <li>Arbeitet in klaren Zyklen mit regelmäßigem Feedback.</li>
+        </ul>
+    </section>
+
+    <section class="block">
+        <h2>Unterschied zu klassischen Projekten</h2>
+        <ul>
+            <li>Traditionell: <em>Plan → Entwicklung → Test → Feedback</em>.</li>
+            <li>Probleme: Feedback kommt oft zu spät, Änderungen sind teuer.</li>
+            <li>Agil: Frühes Feedback, kontinuierliche Anpassung, produktionsnahe
+                Entwicklung.</li>
+        </ul>
+    </section>
+
+    <section class="block">
+        <h2>Agile Zyklen und Meetings</h2>
+        <ul>
+            <li><strong>Sprint Planning:</strong> Was wird im nächsten Sprint geschafft?</li>
+            <li><strong>Daily Stand-up:</strong> Kurzes tägliches Meeting (Was habe ich gemacht? Was steht
+                an? Hindernisse?).</li>
+            <li><strong>Review:</strong> Kundenfeedback zum Sprint-Ergebnis.</li>
+            <li><strong>Retrospektive:</strong> Was lief gut? Was verbessern wir im nächsten Sprint?</li>
+        </ul>
+    </section>
+
+    <section class="block">
+        <h2>Vorteile und Herausforderungen</h2>
+        <ul>
+            <li><strong>Vorteile:</strong>
+                <ul>
+                    <li>Schnelleres Feedback</li>
+                    <li>Bessere Kundenorientierung</li>
+                    <li>Stärkere Teambeteiligung</li>
+                </ul>
+            </li>
+            <li><strong>Herausforderungen:</strong>
+                <ul>
+                    <li>Erfordert diszipliniertes Teamwork</li>
+                    <li>Klare Kommunikation & Rollenverständnis notwendig</li>
+                    <li>Agile Prinzipien müssen gelebt werden – sonst Chaos statt Agilität</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    </main>
+
+    </div>
+
+    <div class="footer-placeholder"></div>
+
+
+    <footer class="footer">
+        <div class="footer-left">
+            <a href="/Unterseiten/TDIPBProductionStability.html">
+                <img src="/pictures/zuruck-button.png" alt="Zurück" class="home-icon">
+            </a>
+        </div>
+
+        <div class="footer-center">
+            <a href="/Homepage.html" class="footer-home-button">Home</a>
+        </div>
+
+        <div class="footer-right">
+            <a href="/Unterseiten/Java.html">
+                <img src="/pictures/zuruck-button2.png" alt="Weiter" class="home-icon2">
+            </a>
+        </div>
+    </footer>
+    <script>
+        const footer = document.querySelector(".footer");
+
+        document.addEventListener("mousemove", function (e) {
+            const distanceFromBottom = window.innerHeight - e.clientY;
+
+            if (distanceFromBottom < 100) {
+                footer.classList.add("show");
+            } else {
+                footer.classList.remove("show");
+            }
+        });
+    </script>
+
+</body>
+
+</html>

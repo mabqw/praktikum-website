@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head id="front">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Java</title>
+    <link rel="stylesheet" href="/style\styleUnter.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <img src="/pictures/menu-icon.png" alt="Menü" class="menu-icon">
+                </button>
+                <div class="dropdown-content">
+                    <a href="/Unterseiten/GrundlagenDerIT.html">Grundlagen der IT</a>
+                    <a href="/Unterseiten/Tech.html">Präsentationstechniken</a>
+                    <a href="/Unterseiten/KIAnwendungUndEthik.html">KI Anwendung & Ethik</a>
+                    <a href="/Unterseiten/Python.html">Python</a>
+                    <a href="/Unterseiten/ITSicherheit.html">IT Sicherheit</a>
+                    <a href="/Unterseiten/TDIPBProductionStability.html">TDI PB Production Stability</a>
+                    <a href="/Unterseiten/Agilitaet.html">Agilität</a>
+                    <a href="/Unterseiten/DB.html">Deutsche Bank</a>
+                    <a href="/Homepage.html">Home</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="nav-center">
+            <p class="nav-title">Java; Grundlagen: Klassen, Syntax...</p>
+        </div>
+        <div class="nav-right">
+            <a id="Homepage" href="/login.html">
+                <img src="/pictures/icon-key.png" alt="Homepage" class="home-icon">
+            </a>
+        </div>
+    </nav>
+
+    <div class="navbar-placeholder"></div>
+    <div class="navbar-placeholder"></div>
+
+    <main>
+    <section class="block">
+        <h2>Was ist Java?</h2>
+        <p>Java ist eine objektorientierte Programmiersprache, die plattformunabhängig funktioniert. Sie ist weit verbreitet in der Softwareentwicklung, z.&nbsp;B. bei Web-Anwendungen, Android-Apps oder Unternehmenssoftware.</p>
+    </section>
+
+    <section class="block">
+        <h2>Grundlegende Datentypen in Java</h2>
+        <p>Java bietet primitive Datentypen wie <code>int</code> (Ganzzahlen), <code>double</code> (Fließkommazahlen), <code>char</code> (einzelne Zeichen) und <code>boolean</code> (true/false). Zusätzlich gibt es Klassen wie <code>String</code> für Texte.</p>
+        <p>Beispiel:</p>
+        <pre><code>int number = 5;
+double number2 = 1.2;
+char char1 = 'A';
+String test = "A, B, C, D, E, F";</code></pre>
+    </section>
+
+    <section class="block">
+        <h2>Mathematische Operationen</h2>
+        <p>Java stellt viele mathematische Funktionen bereit, etwa mit der Klasse <code>Math</code>. Man kann Zufallszahlen erzeugen und runden:</p>
+        <pre><code>double result = Math.ceil(Math.random() * 500) / 100;</code></pre>
+    </section>
+
+    <section class="block">
+        <h2>Benutzereingaben mit Scanner</h2>
+        <p>Mit der Klasse <code>Scanner</code> lassen sich Eingaben über die Konsole verarbeiten:</p>
+        <pre><code>Scanner x = new Scanner(System.in);
+System.out.print("Username: ");
+String username = x.nextLine();</code></pre>
+    </section>
+
+    <section class="block">
+        <h2>Verzweigungen mit if/else</h2>
+        <p>Entscheidungen werden mit if/else-Anweisungen getroffen:</p>
+        <pre><code>if ("Ja".equalsIgnoreCase(save)) {
+    System.out.println("Top!");
+} else if ("Nein".equalsIgnoreCase(save)) {
+    System.out.println("Error 404; restart!");
+}</code></pre>
+    </section>
+
+    <section class="block">
+        <h2>Einfache Taschenrechner-Logik</h2>
+        <p>Mit Bedingungen und Operatoren kann ein einfacher Rechner umgesetzt werden:</p>
+        <pre><code>if (operator.equals("+")) {
+    System.out.println(ersterTeil + zweiterTeil);
+} else if (operator.equals("*")) {
+    System.out.println(ersterTeil * zweiterTeil);
+}</code></pre>
+        <p>So lassen sich Texteingaben in Zahlen umwandeln und mit verschiedenen Operatoren verarbeiten.</p>
+    </section>
+</main>
+
+
+    <div class="footer-placeholder"></div>
+
+
+    <footer class="footer">
+        <div class="footer-left">
+            <a href="/Unterseiten/Agilitaet.html">
+                <img src="/pictures/zuruck-button.png" alt="Zurück" class="home-icon">
+            </a>
+        </div>
+
+        <div class="footer-center">
+            <a href="/Homepage.html" class="footer-home-button">Home</a>
+        </div>
+
+        </div>
+        <div class="footer-rep-right">
+            </a        </div>
+    </footer>
+
+    </footer>
+    <script>
+        const footer = document.querySelector(".footer");
+
+        document.addEventListener("mousemove", function (e) {
+            const distanceFromBottom = window.innerHeight - e.clientY;
+
+            if (distanceFromBottom < 100) {
+                footer.classList.add("show");
+            } else {
+                footer.classList.remove("show");
+            }
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head id="front">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Production Stability</title>
+    <link rel="stylesheet" href="/style\styleUnter.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <img src="/pictures/menu-icon.png" alt="Menü" class="menu-icon">
+                </button>
+                <div class="dropdown-content">
+                    <a href="/Unterseiten/GrundlagenDerIT.html">Grundlagen der IT</a>
+                    <a href="/Unterseiten/Tech.html">Präsentationstechniken</a>
+                    <a href="/Unterseiten/KIAnwendungUndEthik.html">KI Anwendung & Ethik</a>
+                    <a href="/Unterseiten/Python.html">Python</a>
+                    <a href="/Unterseiten/ITSicherheit.html">IT Sicherheit</a>
+                    <a href="/Unterseiten/Agilitaet.html">Agilität</a>
+                    <a href="/Unterseiten/Java.html">Java</a>
+                    <a href="/Unterseiten/DB.html">Deutsche Bank</a>
+                    <a href="/Homepage.html">Home</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="nav-center">
+            <p class="nav-title">Production Stability; 3 Lvl of Support</p>
+        </div>
+        <div class="nav-right">
+            <a id="Homepage" href="/login.html">
+                <img src="/pictures/icon-key.png" alt="Homepage" class="home-icon">
+            </a>
+        </div>
+    </nav>
+
+    <div class="navbar-placeholder"></div>
+    <div class="navbar-placeholder"></div>
+
+    <div class="main">
+
+        <main>
+            <main>
+                <section class="block">
+                    <h2>Was ist Production Stability?</h2>
+                    <ul>
+                        <li>Gewährleistung von Verfügbarkeit, Zuverlässigkeit und
+                            Stabilität von IT-Systemen im laufenden Betrieb.</li>
+                        <li>Kritisch für große Unternehmen mit vielen Abhängigkeiten und Echtzeitservices.</li>
+                        <li>Voraussetzung für funktionierende digitale Prozesse & Kundenzufriedenheit.</li>
+                    </ul>
+                </section>
+
+                <section class="block">
+                    <h2>Incident Management</h2>
+                    <ul>
+                        <li>Ein Incident = ungeplanter Ausfall oder Störung (z. B. Server offline).</li>
+                        <li>Ziel: Sofortige Reaktion und schnelle Wiederherstellung des Dienstes.</li>
+                        <li>First-Level-Support & Bereitschaftsteams sind entscheidend.</li>
+                    </ul>
+                </section>
+
+                <section class="block">
+                    <h2>Von Incident zu Problem</h2>
+                    <ul>
+                        <li>Wiederkehrende oder tieferliegende Ursachen führen zur Problem-Ermittlung.
+                        </li>
+                        <li>Ziel: Langfristige Ursachenanalyse (Root Cause Analysis).</li>
+                        <li>Beispiel: Mehrere Serverabstürze durch fehlerhaftes Update → Problemticket.</li>
+                    </ul>
+                </section>
+
+                <section class="block">
+                    <h2>Change Management</h2>
+                    <ul>
+                        <li>Ein Change = geplante Änderung an Systemen, um ein Problem dauerhaft zu lösen.</li>
+                        <li>Muss sorgfältig geplant, getestet und abgestimmt werden.</li>
+                        <li>Ziel: Verbesserung ohne neue Risiken oder Incidents zu erzeugen.</li>
+                    </ul>
+                </section>
+
+                <section class="block">
+                    <h2>Priorisierung: P1 bis P4 & PC</h2>
+                    <ul>
+                        <li><strong>P1:</strong> Kritische Störung mit hohem Impact – sofortiger Einsatz (z. B.
+                            Produktion steht).</li>
+                        <li><strong>P2:</strong> Starke Einschränkung – muss innerhalb weniger Stunden gelöst werden.
+                        </li>
+                        <li><strong>P3:</strong> Moderate Beeinträchtigung – mittelfristige Bearbeitung.</li>
+                        <li><strong>P4:</strong> Geringe Auswirkung – kein akuter Handlungsbedarf.</li>
+                        <li><strong>PC (Proactive Case):</strong> Vorbeugende Maßnahme – bevor ein Incident auftritt.
+                        </li>
+                    </ul>
+                </section>
+            </main>
+
+        </main>
+    </div>
+
+    <div class="footer-placeholder"></div>
+
+
+    <footer class="footer">
+        <div class="footer-left">
+            <a href="/Unterseiten/ITSicherheit.html">
+                <img src="/pictures/zuruck-button.png" alt="Zurück" class="home-icon">
+            </a>
+        </div>
+
+        <div class="footer-center">
+            <a href="/Homepage.html" class="footer-home-button">Home</a>
+        </div>
+
+        <div class="footer-right">
+            <a href="/Unterseiten/Agilitaet.html">
+                <img src="/pictures/zuruck-button2.png" alt="Weiter" class="home-icon2">
+            </a>
+        </div>
+    </footer>
+    <script>
+        const footer = document.querySelector(".footer");
+
+        document.addEventListener("mousemove", function (e) {
+            const distanceFromBottom = window.innerHeight - e.clientY;
+
+            if (distanceFromBottom < 100) {
+                footer.classList.add("show");
+            } else {
+                footer.classList.remove("show");
+            }
+        });
+    </script>
+
+</body>
+
+</html>
