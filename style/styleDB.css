@@ -1,0 +1,245 @@
+body {
+  margin: 0;
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  top: 2%;
+  left: 0;
+  width: 80%;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  margin-left: 10%;
+  height: 6%;
+
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.navbar-placeholder {
+  height: 120px;
+}
+
+.nav-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+}
+
+.nav-right {
+  margin-left: auto;
+  padding: 10px 30px;
+  border-radius: 30px;
+  box-shadow: 0 0 20px #ffffffd7;
+  display: flex;
+  align-items: center;
+}
+
+.home-icon,
+.home-icon2 {
+  width: 30px;
+  height: 30px;
+}
+
+.home-icon2 {
+  transform: scaleX(-1);
+}
+
+.main {
+  margin: 0 5%;
+  padding: 30px 40px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.main h1 {
+  color: rgb(0, 0, 0);
+  font-size: 28px;
+}
+
+.main h2 {
+  margin-top: 30px;
+  color: #2a2a2a;
+}
+
+.main p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.main ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+.main ul li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.footer {
+  position: fixed;
+  bottom: -90px;
+  left: 0;
+  width: 80%;
+  margin-left: 10%;
+  height: 5vh;
+  z-index: 999;
+
+  color: #000000;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  transition: bottom 0.4s ease-in-out;
+
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.footer.show {
+  bottom: 2%;
+}
+
+.dropbtn{
+  padding-left: 0%;
+  padding-right: 0%;
+  border: none;
+  background: none;
+
+}
+
+.footer-placeholder {
+  height: 100px;
+}
+
+.footer-left,
+.footer-right {
+  padding: 10px 30px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-center {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-home-button {
+  color: #000000;
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.footer-home-button:hover {
+  background-color: #ffffff;
+  color: rgba(146, 153, 255, 1);
+}
+
+
+.dropbtn:hover .menu-icon {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 5px white);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  min-width: 220px;
+  padding: 15px 0;
+  z-index: 9999;
+
+  padding-top: 15px;
+  margin-top: -5px;
+  margin-left: 0px;
+
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+.dropdown-content a {
+  display: block;
+  padding: 12px 20px;
+  color: #000000;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  font-weight: 500;
+  border-radius: 12px;
+  margin: 3px 10px;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(146, 153, 255, 0.4);
+  color: #000;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+.block {
+    border: 3px solid rgba(146, 153, 255, 0.842);
+    padding: 30px;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 1%;
+    border-radius: 12px;
+    background-color: #f9f9ff;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(146, 153, 255, 0.3);
+}
+
+.block h2 {
+    width: 70%;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.block p {
+    font-size: 18px;
+    color: #333;
+}
+
+.block-image {
+    max-width: 300px;
+    margin-top: 20px;
+}

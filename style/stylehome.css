@@ -1,0 +1,267 @@
+body {
+  margin: 0;
+  background-color: #000;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  top: 2%;
+  left: 0;
+  width: 80%;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  margin-left: 10%;
+  height: 6%;
+
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.navbar-placeholder {
+  height: 120px;
+}
+
+.nav-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+}
+
+.nav-right {
+  margin-left: auto;
+  padding: 10px 30px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.home-icon {
+  width: 30px;
+  height: 30px;
+}
+
+#DB {
+  width: 100%;
+  height: 80vh;
+  padding-bottom: 0;
+
+}
+
+.table-wrapper {
+  margin-top: 10px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-x: auto;
+
+}
+
+.glow-table th,
+.glow-table td {
+  width: 16.66%;
+  height: 15vh;
+  border: 2px solid white;
+  box-shadow: 0 0 5px white;
+  padding: 15px;
+  text-align: center;
+}
+
+.glow-table th {
+  color: white;
+  font-size: 18px;
+  background-color: #222;
+  text-shadow: 0 0 5px white;
+}
+
+.glow-cell {
+  text-align: center;
+  width: 50%;
+  padding: 8px;
+  background-color: #111;
+  border: 1px solid white;
+  color: white;
+  box-shadow: 0 0 5px white;
+  border-radius: 100px;
+  margin: auto;
+  text-decoration: none;
+}
+
+.glow-table {
+  border-radius: 20px;
+  overflow: hidden;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.glow-table th:first-child {
+  border-top-left-radius: 20px;
+}
+
+.glow-table th:last-child {
+  border-top-right-radius: 20px;
+}
+
+.glow-table tr:last-child td:first-child {
+  border-bottom-left-radius: 20px;
+}
+
+.glow-table tr:last-child td:last-child {
+  border-bottom-right-radius: 20px;
+}
+
+
+.inter :hover {
+  background-color: white;
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  outline-color: #fff;
+  outline-width: 10px;
+  border-radius: 100px;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+  box-sizing: border-box;
+  display: flex;
+  width:  60%;
+  margin-left: 20%;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.footer-name {
+  font-size: 24px;
+  text-shadow: 0 0 10px white;
+}
+
+.footer-location {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.map-container {
+  width: 60%;
+  height: 350px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.footer-address p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.5;
+  text-shadow: 0 0 5px white;
+}
+
+#containerdb {
+  justify-content: space-between;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 15px;
+  box-shadow: 0 0 20px white;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.menu-icon {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.dropbtn:hover .menu-icon {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 5px white);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  min-width: 220px;
+  padding: 15px 0;
+  z-index: 9999;
+
+  padding-top: 15px;
+  margin-top: -3px;
+  margin-left: -7px;
+
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+.dropdown-content a {
+  display: block;
+  padding: 12px 20px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  font-weight: 500;
+  border-radius: 12px;
+  margin: 3px 10px;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(146, 153, 255, 0.4);
+  color: #000;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
